@@ -315,11 +315,22 @@ db.batch()
 
   db.get("sender",{asBuffer: false }, function (err, value) {
     if (err) return console.log("Ooops!", err); // likely the key was not found
-  //  console.log("sender+", value)
-  //  value.forEach((element) => {
-  //     console.log("name=" + element);
-  //   });
-  // console.log(value.map((element) => element));
+  console.log(value);
+  });
+  db.get("receiver",{asBuffer: false }, function (err, value) {
+    if (err) return console.log("Ooops!", err); // likely the key was not found
+  console.log(value);
+  });
+  db.get("amount",{asBuffer: false }, function (err, value) {
+    if (err) return console.log("Ooops!", err); // likely the key was not found
+  console.log(value);
+  });
+  db.get("currency",{asBuffer: false }, function (err, value) {
+    if (err) return console.log("Ooops!", err); // likely the key was not found
+  console.log(value);
+  });
+  db.get("Transiction-id",{asBuffer: false }, function (err, value) {
+    if (err) return console.log("Ooops!", err); // likely the key was not found
   console.log(value);
   });
 
